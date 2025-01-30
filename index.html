@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- tailwind css -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -25,21 +25,24 @@
             colors: {
               clifford: "#da373d",
             },
+            fontFamily: {
+              manrope: ['Manrope', 'sans-serif'],
+            },
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="font-manrope">
     <!-- Main Content -->
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
       <!-- header section -->
       <header class="lg:flex items-center pt-10 mb-20">
         <!-- text content -->
         <div>
-          <h1 class="text-5xl font-semibold md:text-7xl">
+          <h1 class="text-5xl font-bold md:text-6xl">
             It's good <br />
-            tea time at The <br />
+            tea time at The <br>
             Tea House
           </h1>
           <br />
